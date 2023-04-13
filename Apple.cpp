@@ -3,6 +3,7 @@
 
 AApple::AApple()
 {
+	Name = "»ç°ú";
 }
 
 AApple::~AApple()

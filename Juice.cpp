@@ -1,14 +1,14 @@
 #include "Juice.h"
+#include "Ingredient.h"
 #include<iostream>
 
 using namespace std;
 
-UJuice::UJuice()
+UJuice::UJuice(FFruit* Resource)
 {
-}
+	Name = Resource->GetName();
 
-UJuice::UJuice(string JuiceName)
-{
+	std::cout << Name << " Áê½º ÀÔ´Ï´Ù." << std::endl;
 }
 
 UJuice::~UJuice()

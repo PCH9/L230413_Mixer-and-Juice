@@ -3,6 +3,7 @@
 
 AOrange::AOrange()
 {
+	Name = "¿À·»Áö";
 }
 
 AOrange::~AOrange()

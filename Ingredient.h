@@ -1,11 +1,16 @@
 #pragma once
-#include "Juice.h"
-#include "MIxer.h"
+#include <string>
 
-class AIngredient : public UMixer
+class AIngredient
 {
 public:
 	AIngredient();
-	virtual ~AIngredient() override;
+	virtual ~AIngredient();
+
+	//accessor
+	inline std::string GetName() const { return Name; }
+
+protected:
+	std::string Name;
 };
 

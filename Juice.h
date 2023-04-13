@@ -1,10 +1,14 @@
 #pragma once
+#include <iostream>
 
 class UJuice
 {
 public:
-	UJuice();
-	UJuice(string JuiceName);
+	UJuice(class FFruit* Resource);
 	virtual ~UJuice();
+	inline std::string GetName() const { return Name; }
+
+protected:
+	std::string Name;
 };
 
